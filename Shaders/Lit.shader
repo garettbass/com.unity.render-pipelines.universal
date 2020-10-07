@@ -136,7 +136,7 @@ Shader "Universal Render Pipeline/Lit"
 
             ZWrite On
             ZTest LEqual
-            Cull[_Cull]
+            Cull Front // was: Cull[_Cull]
 
             HLSLPROGRAM
             #pragma exclude_renderers d3d11_9x gles
@@ -419,7 +419,7 @@ Shader "Universal Render Pipeline/Lit"
 
             ZWrite On
             ZTest LEqual
-            Cull[_Cull]
+            Cull Front // was: Cull[_Cull]
 
             HLSLPROGRAM
             #pragma only_renderers gles gles3 glcore

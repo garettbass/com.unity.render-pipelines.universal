@@ -101,6 +101,7 @@ Shader "Universal Render Pipeline/Terrain/Lit"
             Tags{"LightMode" = "ShadowCaster"}
 
             ZWrite On
+            Cull Front // was: <default, no Cull directive>
 
             HLSLPROGRAM
             // Required to compile gles 2.0 with standard srp library
